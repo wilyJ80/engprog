@@ -1,4 +1,4 @@
-#include "util.h"
+#include "fibonacci.h"
 #include <stdlib.h>
 
 int main(void)
