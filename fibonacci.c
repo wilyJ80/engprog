@@ -15,7 +15,7 @@ void printFibonacci(struct Fibonacci *self) {
 }
 
 struct Fibonacci createFibonacci() {
-	static struct RecursiveFibonacci rfib = {
+	static struct RecursiveFibonacciSingleton rfib = {
 		.recursiveFibonacci = recursiveFibonacci,
 		.initResults = initResults
 	};

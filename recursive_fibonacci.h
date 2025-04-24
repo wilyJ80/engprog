@@ -3,13 +3,13 @@
 
 #include "result.h"
 
-struct RecursiveFibonacci {
+struct RecursiveFibonacciSingleton {
 	const int (*recursiveFibonacci)(int n);
 	struct Result results[5];
-	void (*initResults)(struct RecursiveFibonacci *self);
+	void (*initResults)(struct RecursiveFibonacciSingleton *self);
 };
 
-void initResults(struct RecursiveFibonacci *self);
+void initResults(struct RecursiveFibonacciSingleton *self);
 const int recursiveFibonacci(int n);
 
 #endif // !RECURSIVE_FIBONACCI_H

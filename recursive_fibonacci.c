@@ -9,7 +9,7 @@ const int recursiveFibonacci(int n) {
 	return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
 }
 
-void initResults(struct RecursiveFibonacci *self) {
+void initResults(struct RecursiveFibonacciSingleton *self) {
 	int inputSize = 100;
 	for (int i = 0; i < 5; i++) {
 		self->results[i].inputSize = inputSize;
