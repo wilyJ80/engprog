@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc -g ./main.c ./util.c -o main && ./main
+gcc -g ./main.c ./fibonacci.c ./recursive_fibonacci.c -o main && ./main

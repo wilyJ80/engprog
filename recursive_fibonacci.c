@@ -10,7 +10,6 @@ const int recursiveFibonacci(int n) {
 }
 
 void initResults(struct RecursiveFibonacci *self) {
-	struct Result result[5];
 	int inputSize = 100;
 	for (int i = 0; i < 5; i++) {
 		self->results[i].inputSize = inputSize;
