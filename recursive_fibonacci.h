@@ -7,8 +7,10 @@ struct RecursiveFibonacciSingleton {
 	const int (*recursiveFibonacci)(int n);
 	struct Result results[5];
 	void (*initResults)(struct RecursiveFibonacciSingleton *self);
+	void (*calculateResults)(struct RecursiveFibonacciSingleton *self);
 };
 
+void calculateResults(struct RecursiveFibonacciSingleton *self);
 void initResults(struct RecursiveFibonacciSingleton *self);
 const int recursiveFibonacci(int n);
 

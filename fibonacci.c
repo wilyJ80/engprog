@@ -5,11 +5,11 @@ void printFibonacci(struct Fibonacci *self) {
 	printf("+---------------------+\n");
 	printf("| Recursive Fibonacci |\n");
 	printf("+---------------------+\n");
-	printf("| Input size | Steps  |\n");
+	printf("| Input No. | Time    |\n");
 	printf("+---------------------+\n");
 	for (int i = 0; i < 5; i++) {
 		struct Result result = self->recursiveFibonacci.results[i];
-		printf("| %d | %d |\n", result.inputSize, result.steps);
+		printf("| %d | %d |\n", result.inputNumber, result.time);
 	}
 	printf("+---------------------+\n");
 }

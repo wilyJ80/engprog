@@ -10,10 +10,14 @@ const int recursiveFibonacci(int n) {
 }
 
 void initResults(struct RecursiveFibonacciSingleton *self) {
-	int inputSize = 100;
+	int inputNumber = 2;
 	for (int i = 0; i < 5; i++) {
-		self->results[i].inputSize = inputSize;
-		self->results[i].steps = 0;
-		inputSize *= 10;
+		self->results[i].inputNumber = inputNumber;
+		self->results[i].time = 0;
+		inputNumber *= 2;
 	}
+}
+
+void calculateResults(struct RecursiveFibonacciSingleton *self) {
+
 }

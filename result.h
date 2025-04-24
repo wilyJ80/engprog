@@ -2,8 +2,8 @@
 #define RESULT_H
 
 struct Result {
-	int inputSize;
-	int steps;
+	int inputNumber;
+	int time;
 };
 
 #endif // !RESULT_H
