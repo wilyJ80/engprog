@@ -3,7 +3,7 @@
 
 struct Result {
 	int inputNumber;
-	int time;
+	int steps;
 };
 
 #endif // !RESULT_H

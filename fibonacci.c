@@ -6,11 +6,11 @@ void printFibonacci(struct Fibonacci *self) {
 	printf("+---------------------+\n");
 	printf("| Recursive Fibonacci |\n");
 	printf("+---------------------+\n");
-	printf("| Input No. | Time    |\n");
+	printf("| Input No. | Steps   |\n");
 	printf("+---------------------+\n");
 	for (int i = 0; i < 5; i++) {
 		struct Result result = self->recursiveFibonacci.results[i];
-		printf("| %d | %d |\n", result.inputNumber, result.time);
+		printf("| %d | %d |\n", result.inputNumber, result.steps);
 	}
 	printf("+---------------------+\n");
 }

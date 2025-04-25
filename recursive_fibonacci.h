@@ -4,7 +4,7 @@
 #include "result.h"
 
 struct RecursiveFibonacci {
-	const int (*recursiveFibonacci)(int n);
+	const int (*recursiveFibonacci)(int n, int *steps);
 	struct Result results[5];
 	void (*initResults)(struct RecursiveFibonacci *self);
 	void (*calculateResults)(struct RecursiveFibonacci *self);
@@ -13,6 +13,6 @@ struct RecursiveFibonacci {
 struct RecursiveFibonacci createRecursiveFibonacci();
 void calculateResults(struct RecursiveFibonacci *self);
 void initResults(struct RecursiveFibonacci *self);
-const int recursiveFibonacci(int nthNumber);
+const int recursiveFibonacci(int nthNumber, int *steps);
 
 #endif // !RECURSIVE_FIBONACCI_H
