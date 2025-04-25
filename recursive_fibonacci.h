@@ -12,6 +12,6 @@ struct RecursiveFibonacciSingleton {
 
 void calculateResults(struct RecursiveFibonacciSingleton *self);
 void initResults(struct RecursiveFibonacciSingleton *self);
-const int recursiveFibonacci(int n);
+const int recursiveFibonacci(int nthNumber);
 
 #endif // !RECURSIVE_FIBONACCI_H

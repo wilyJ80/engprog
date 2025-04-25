@@ -1,4 +1,5 @@
 #include "./fibonacci.h"
+#include "recursive_fibonacci.h"
 #include <stdio.h>
 
 void printFibonacci(struct Fibonacci *self) {
@@ -17,7 +18,8 @@ void printFibonacci(struct Fibonacci *self) {
 struct Fibonacci createFibonacci() {
 	static struct RecursiveFibonacciSingleton rfib = {
 		.recursiveFibonacci = recursiveFibonacci,
-		.initResults = initResults
+		.initResults = initResults,
+		.calculateResults = calculateResults
 	};
 
 	rfib.initResults(&rfib);

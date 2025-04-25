@@ -1,12 +1,14 @@
 #include "recursive_fibonacci.h"
+#include "fibonacci.h"
+#include <stdio.h>
 
-const int recursiveFibonacci(int n) {
-	if (n == 0) {
+const int recursiveFibonacci(int nthNumber) {
+	if (nthNumber == 0) {
 		return 0;
-	} else if (n == 1) {
+	} else if (nthNumber == 1) {
 		return 1;
 	}
-	return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+	return recursiveFibonacci(nthNumber - 1) + recursiveFibonacci(nthNumber - 2);
 }
 
 void initResults(struct RecursiveFibonacciSingleton *self) {
@@ -19,5 +21,8 @@ void initResults(struct RecursiveFibonacciSingleton *self) {
 }
 
 void calculateResults(struct RecursiveFibonacciSingleton *self) {
-
+	for (int i = 0; i < 5; i++) {
+		const int result = recursiveFibonacci(self->results[i].inputNumber);
+		self->results[i].time = 9;
+	}
 }
