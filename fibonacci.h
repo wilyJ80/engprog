@@ -4,7 +4,7 @@
 #include "./recursive_fibonacci.h"
 
 struct Fibonacci {
-	struct RecursiveFibonacciSingleton recursiveFibonacci;
+	struct RecursiveFibonacci recursiveFibonacci;
 	void (*printFibonacci)(struct Fibonacci *self);
 };
 
