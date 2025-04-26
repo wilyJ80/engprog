@@ -2,9 +2,11 @@
 #define FIBONACCI_H
 
 #include "./recursive_fibonacci.h"
+#include "iterative_fibonacci.h"
 
 struct Fibonacci {
 	struct RecursiveFibonacci recursiveFibonacci;
+	struct IterativeFibonacci iterativeFibonacci;
 	void (*printFibonacci)(struct Fibonacci *self);
 };
 

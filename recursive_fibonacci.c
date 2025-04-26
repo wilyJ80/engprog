@@ -13,27 +13,26 @@ const int recursiveFibonacci(int nthNumber, int *steps) {
 	return recursiveFibonacci(nthNumber - 1, steps) + recursiveFibonacci(nthNumber - 2, steps);
 }
 
-void initResults(struct RecursiveFibonacci *self) {
+void initRfibResults(struct RecursiveFibonacci *self) {
 	int inputNumber = 2;
 	for (int i = 0; i < 5; i++) {
 		self->results[i].inputNumber = inputNumber;
 		self->results[i].steps = 0;
-		inputNumber += 10; 
+		inputNumber += 2; 
 	}
 }
 
-void calculateResults(struct RecursiveFibonacci *self) {
+void calculateRfibResults(struct RecursiveFibonacci *self) {
 	for (int i = 0; i < 5; i++) {
 		const int result = recursiveFibonacci(self->results[i].inputNumber, &self->results[i].steps);
-		// self->results[i].steps = 1;
 	}
 }
 
 struct RecursiveFibonacci createRecursiveFibonacci() {
 	struct RecursiveFibonacci rfib = {
-		.calculateResults = calculateResults,
+		.calculateResults = calculateRfibResults,
 		.recursiveFibonacci = recursiveFibonacci,
-		.initResults = initResults
+		.initResults = initRfibResults
 	};
 	return rfib;
 }

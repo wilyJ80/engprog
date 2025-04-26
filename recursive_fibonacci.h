@@ -11,8 +11,8 @@ struct RecursiveFibonacci {
 };
 
 struct RecursiveFibonacci createRecursiveFibonacci();
-void calculateResults(struct RecursiveFibonacci *self);
-void initResults(struct RecursiveFibonacci *self);
+void calculateRfibResults(struct RecursiveFibonacci *self);
+void initRfibResults(struct RecursiveFibonacci *self);
 const int recursiveFibonacci(int nthNumber, int *steps);
 
 #endif // !RECURSIVE_FIBONACCI_H
